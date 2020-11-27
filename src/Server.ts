@@ -13,7 +13,6 @@ const PORT = process.env.PORT || 4000;
 
 const app: express.Application = express();
 
-console.log(WHITELIST.split(','))
 app.use(bodyParser.json())
 app.use(cors({
   origin: WHITELIST.split(',')
